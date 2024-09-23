@@ -7,6 +7,17 @@ public class Elephant extends Animal{
 
     @Override
     public String battle(Animal other) {
-       return"";
+        if (this.strength > other.getStrength())
+        {
+            return "win";
+        }
+        if (this.strength == other.getStrength())
+        {
+            return "tie";
+        }
+        else
+        {
+            return "lose";
+        }
     }
 }
